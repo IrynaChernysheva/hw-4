@@ -25,6 +25,8 @@ p {
 
 img {
     display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 .contanier {
@@ -163,10 +165,17 @@ img {
 /* шапка сайта*/
 
 .hero {
+    max-width: 1600px;
+    margin-right: auto;
+    margin-left: auto;
     background-color: #2F303A;
     text-align: center;
     padding-top: 200px;
     padding-bottom: 200px;
+    background-image: url(../images/hero/Img.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
 }
 .hero-title {
     font-weight: 900;
@@ -206,6 +215,7 @@ img {
 
 .list-peculiarities {
     display: flex;
+    flex-wrap: wrap;
     width: 1170px;
     margin-top: 0;
     margin-bottom: 0;
@@ -241,6 +251,7 @@ img {
 .peculiarities,
 .what-are-we-doing-pading {
     display: flex;
+    flex-wrap: wrap;
     padding-top: 94px;
     padding-bottom: 94px;
 }
@@ -259,6 +270,7 @@ img {
 }
 .list-what-are-we-doing {
     display: flex;
+    flex-wrap: wrap;
     justify-content:space-between ;
     padding: 0;
     margin-top: 0;
@@ -287,6 +299,7 @@ img {
 }
 .member-list {
     display: flex;
+    flex-wrap: wrap;
     padding: 0;
     margin-top: 0px;
     margin-bottom: 0px;
@@ -427,6 +440,7 @@ margin-right: 0;
 }
 .filter-title {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     margin-top: 0;
@@ -447,9 +461,8 @@ margin-right: 0;
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 0;
-    /*padding-bottom: 94px;*/
     margin-top: 0;
-    margin-bottom: 0;
+    margin-bottom: 0;  
     
 }
 .portfolio-list {
@@ -459,6 +472,7 @@ margin-right: 0;
 .portfolio-list:nth-child(n+7) {
     margin-bottom: 0;
 }
+
 .portfolio-group {
     padding-left: 24px;
     padding-right: 24px;
