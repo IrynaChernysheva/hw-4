@@ -72,6 +72,18 @@ img {
     color: #000000;
     text-decoration: none;
 }
+.logo-blue-footer {
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: var(--brend-color);
+    text-decoration: none;
+    margin-top: 0;
+    margin-bottom: 24px;
+    padding: 0;
+}
 .logo-footer {
     font-family: 'Raleway';
     font-weight: 700;
@@ -139,7 +151,7 @@ img {
     letter-spacing: 0.02em;
     color: var(--text-color);
     text-decoration: none;
-    padding-right: 50px;
+    margin-right: 50px;
     padding-top: 32px;
     padding-bottom: 32px;
 }
@@ -172,7 +184,8 @@ img {
     text-align: center;
     padding-top: 200px;
     padding-bottom: 200px;
-    background-image: url(../images/hero/Img\ Overlay.png),url(../images/hero/Img.png); 
+    background-image: url(../images/hero/Img\ Overlay.png),
+    url(../images/hero/Img.png); 
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -205,7 +218,8 @@ img {
     padding-left: 32px;
     padding-right: 32px;
     padding-top: 10px;
-    padding-bottom: 10px;    
+    padding-bottom: 10px;  
+    border-radius: 4px;
 }
 .hero-navigtion:focus,
 .hero-navigtion:active 
@@ -248,11 +262,16 @@ img {
     margin-bottom: 0px;
     
 }
-.peculiarities,
-.what-are-we-doing-pading {
+.peculiarities {
     display: flex;
     flex-wrap: wrap;
     padding-top: 94px;
+    padding-bottom: 94px;
+}
+.what-are-we-doing-pading {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 0;
     padding-bottom: 94px;
 }
 
@@ -285,6 +304,10 @@ img {
 }
 
 /*наша команда*/
+.team {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
 
 .our-team {
     font-weight: 700;
@@ -294,7 +317,6 @@ img {
     color: var(--title-text-color);
     margin-top: 0px;
     margin-bottom: 50px;
-    padding-top: 94px;
     text-align: center;
 }
 .member-list {
@@ -303,7 +325,6 @@ img {
     padding: 0;
     margin-top: 0px;
     margin-bottom: 0px;
-    padding-bottom: 94px;
 }
 
 .member-group{
@@ -369,9 +390,16 @@ margin-right: 0;
     color: var(--primary-white-color);
     font-style: normal;
     margin-top: 0;
-    margin-bottom: 9px;   
+      
 }
-
+.group-footer-1 {
+    margin-top: 0;
+    margin-bottom: 9px;
+}
+.group-footer-2 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
 .group-mailto-footer,
 .group-tel-footer {
     display: block;
@@ -381,10 +409,7 @@ margin-right: 0;
     color: #ffffff99;
     text-decoration: none;
 }
-.group-mailto-footer{
-    margin-top: 0;
-    margin-bottom: 9px;
-}
+
 .group-mailto-footer:hover,
 .group-mailto-footer:focus,
 .group-tel-footer:hover,
@@ -467,17 +492,20 @@ margin-right: 0;
 }
 .portfolio-list {
     margin-bottom: 30px;
-    border: 1px solid #EEEEEE;
+
+
+   
 }
 .portfolio-list:nth-child(n+7) {
     margin-bottom: 0;
-}
+ } 
 
 .portfolio-group {
     padding-left: 24px;
     padding-right: 24px;
     padding-top: 20px;
     padding-bottom: 20px;
+    border: 1px solid #EEEEEE;
 }
 .portfolio-title {
     font-weight: 700;
